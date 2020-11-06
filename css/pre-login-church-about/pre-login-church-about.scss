@@ -1,0 +1,44 @@
+@import "../variables.scss";
+@import "../theme.scss";
+
+.header-container {
+  background-color: $header-color;
+}
+
+.sub-header-container {
+  background-color: $sub-header-color;
+}
+
+.header-nav-link {
+  color: $primary-text-color;
+}
+
+.sub-header-nav-link {
+  color: $secondary-color;
+}
+
+.image-stack {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.image-stack__item--top {
+  grid-column: 1 / span 12;
+  grid-row: 1; // must be on the same row as the other image
+  padding-top: 20%; // this pushes the image down, and keeps it proportional as it resizes
+  z-index: 1; // make this image render on top of the bottom
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  grid-row: 1; // make this image be on the same row
+}
+
+.about-us-content{
+  height: 100%;
+  font-size: x-large;
+}
+

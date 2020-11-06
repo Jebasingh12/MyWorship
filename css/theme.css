@@ -1,0 +1,21 @@
+.sub-header-nav-link:hover {
+  background-color: orange;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+@font-face {
+  font-family: "oswald-regular";
+  src: url("./fonts/oswald/Oswald-Regular.ttf");
+}
+
+.text-oswald-regular {
+  font-family: "oswald-regular";
+}
+
+p {
+  font-family: "oswald-regular";
+}

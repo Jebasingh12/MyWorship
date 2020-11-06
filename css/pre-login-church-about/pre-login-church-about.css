@@ -1,0 +1,68 @@
+.sub-header-nav-link:hover {
+  background-color: orange;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+@font-face {
+  font-family: "oswald-regular";
+  src: url("./fonts/oswald/Oswald-Regular.ttf");
+}
+
+.text-oswald-regular {
+  font-family: "oswald-regular";
+}
+
+p {
+  font-family: "oswald-regular";
+}
+
+.header-container {
+  background-color: white;
+}
+
+.sub-header-container {
+  background-color: #32b29b;
+}
+
+.header-nav-link {
+  color: #32b29b;
+}
+
+.sub-header-nav-link {
+  color: white;
+}
+
+.image-stack {
+  height: 400px;
+  width: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.image-stack__item--top {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.about-us-content {
+  height: 100%;
+  font-size: x-large;
+}
